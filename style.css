@@ -1,0 +1,131 @@
+/* Reset Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card Container */
+.weather-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.weather-card h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Search Area */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #2a5298;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background-color: #2a5298;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #1e3c72;
+}
+
+/* Status & Loading */
+.status-message {
+    font-size: 1rem;
+    color: #555;
+    margin: 15px 0;
+}
+
+.status-message.error {
+    color: #e74c3c;
+}
+
+/* Weather Display */
+.weather-details {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#cityName {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.temp-box {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #2a5298;
+    margin: 10px 0;
+}
+
+#weatherCondition {
+    font-size: 1.1rem;
+    color: #666;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.extra-info {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-item span {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.info-item strong {
+    font-size: 1.1rem;
+    color: #333;
+}
