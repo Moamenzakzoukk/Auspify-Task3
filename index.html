@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard | Auspify Task 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-card">
+        <h2>Weather Forecast</h2>
+        
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name..." value="Nagpur">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="statusMessage" class="status-message"></div>
+
+
+        <div id="weatherDetails" class="weather-details hidden">
+            <h3 id="cityName">--</h3>
+            <div class="temp-box">
+                <span id="temperature">--</span>°C
+            </div>
+            <p id="weatherCondition">--</p>
+
+            <div class="extra-info">
+             <div class="info-item">
+                    <span>Wind Speed</span>
+                    <strong id="windSpeed">-- km/h</strong>
+            </div>
+             <div class="info-item">
+                    <span>Humidity</span>
+                    <strong id="humidity">--%</strong>
+              </div>
+         </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
